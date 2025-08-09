@@ -424,6 +424,12 @@ keybinds clear-defaults=true {
             CloseTab
             SwitchToMode "locked"
         }
+        bind "Alt down" {
+            ScrollDown
+        }
+        bind "Alt up" {
+            ScrollUp
+        }
     }
     shared_except "locked" "renametab" "renamepane" {
         bind "Menu" {
