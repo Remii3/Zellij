@@ -377,7 +377,7 @@ keybinds clear-defaults=true {
             SwitchToMode "locked"
         }
     }
-    shared_among "normal" "locked" {
+    shared_among "normal" {
         // Resize
         bind "Alt -" {
             Resize "Decrease"
@@ -394,26 +394,6 @@ keybinds clear-defaults=true {
         }
         bind "Alt f" {
             ToggleFloatingPanes
-        }
-        // Focus movement
-        bind "Alt h" {
-            MoveFocus "left"
-        }
-        bind "Alt j" {
-            MoveFocus "down"
-        }
-        bind "Alt k" {
-            MoveFocus "up"
-        }
-        bind "Alt l" {
-            MoveFocus "right"
-        }
-        // Tab nvaigation
-        bind "Alt n" {
-            GoToNextTab
-        }
-        bind "Alt p" {
-            GoToPreviousTab
         }
         // Close panes and tabs
         bind "Alt x" {
@@ -437,6 +417,28 @@ keybinds clear-defaults=true {
         }
         bind "Alt up" {
             ScrollUp
+        }
+    }
+    shared_among "normal" "locked" {
+        // Focus movement
+        bind "Ctrl h" {
+            MoveFocus "left"
+        }
+        bind "Ctrl j" {
+            MoveFocus "down"
+        }
+        bind "Ctrl k" {
+            MoveFocus "up"
+        }
+        bind "Ctrl l" {
+            MoveFocus "right"
+        }
+        // Tab nvaigation
+        bind "Ctrl n" {
+            GoToNextTab
+        }
+        bind "Ctrl p" {
+            GoToPreviousTab
         }
     }
     shared_except "locked" "renametab" "renamepane" {
