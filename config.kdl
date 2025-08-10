@@ -409,10 +409,10 @@ keybinds clear-defaults=true {
             MoveFocus "right"
         }
         // Tab nvaigation
-        bind "Alt N" {
+        bind "Alt n" {
             GoToNextTab
         }
-        bind "Alt P" {
+        bind "Alt p" {
             GoToPreviousTab
         }
         // Close panes and tabs
@@ -420,8 +420,16 @@ keybinds clear-defaults=true {
             CloseFocus
             SwitchToMode "locked"
         }
-        bind "Alt X" {
+        bind "Alt z" {
             CloseTab
+            SwitchToMode "locked"
+        }
+        bind "Alt t" {
+            NewTab
+            SwitchToMode "locked"
+        }
+        bind "Alt y" {
+            NewPane
             SwitchToMode "locked"
         }
         bind "Alt down" {
